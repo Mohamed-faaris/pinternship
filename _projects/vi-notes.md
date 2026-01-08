@@ -5,7 +5,22 @@ order: 8
 summary: Authenticity verification platform that ensures genuine human writing through keyboard activity monitoring and statistical signature analysis
 color: "FF6B6B"
 repo: "vicharanashala/vi-notes"
-features: []
+features:
+  - title: "Basic Writing Editor"
+    description: "Create a simple text editor that allows users to type their content. This editor will be the primary location for writing within the application. It does not need formatting options like bold or headings. The goal is to provide a clean and distraction-free space where text input can be captured reliably."
+    issue: 1
+  - title: "User Login and Registration"
+    description: "Implement basic user registration and login so that each writing session can be associated with a specific user. Users should be able to sign up using an email and password and log in using the same credentials. Advanced features like roles, password reset are not required at this stage."
+    issue: 2
+  - title: "Capture Keystroke Timing"
+    description: "While a user is typing in the editor, record basic keystroke timing information. This includes the time difference between key presses and releases. The actual characters typed must not be stored. This data will be used later to understand typing behaviour, not the content itself."
+    issue: 3
+  - title: "Detect Pasted Text"
+    description: "Detect when a user pastes text into the editor instead of typing it manually. When a paste happens, record that event and the amount of text pasted. This will help differentiate pasted content from naturally typed content in analysis."
+    issue: 4
+  - title: "Save Writing Session Data"
+    description: "Save the written text along with related session information so it can be accessed later. Each writing session should be stored in a way that links the content to the user and the captured typing metadata. The initial implementation can focus on simple storage and retrieval without complex analysis."
+    issue: 5
 ---
 
 ## **Project Overview**
